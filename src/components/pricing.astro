@@ -1,0 +1,59 @@
+---
+import Icon from "astro-icon";
+import ContentSection from "./content-section.astro";
+
+const freePlan: Array<string> = ["Unlimited questions", "5 users"];
+
+const proPlan: Array<string> = [
+  "Unlimited questions",
+  "Unlimited users",
+  "Slack integration",
+  "Theme personalization",
+];
+---
+
+<ContentSection title="Pricing" id="pricing">
+  <Fragment slot="lead">Choose the right plan for your team.</Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+    <li class="relative rounded-md bg-offset px-6 py-16">
+      <h3 class="absolute left-4 top-4 font-bold text-xs">Free</h3>
+      <p class="font-bold text-3xl">
+        $0<span class="font-normal text-xs">/mo</span>
+      </p>
+      <ul class="mt-6">
+        {
+          freePlan.map((benefit) => (
+            <li class="flex items-center gap-2">
+              <Icon
+                pack="mdi"
+                name="check-circle-outline"
+                class="h-6 text-primary"
+              />
+              <p class="text-sm">{benefit}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </li>
+    <li class="relative rounded-md bg-primary px-6 py-16">
+      <h3 class="absolute left-4 top-4 font-bold text-xs">Pro</h3>
+      <p class="font-bold text-3xl">
+        $2<span class="font-normal text-xs">/mo/user</span>
+      </p>
+      <ul class="mt-6">
+        {
+          proPlan.map((benefit) => (
+            <li class="flex items-center gap-2">
+              <Icon
+                pack="mdi"
+                name="check-circle-outline"
+                class="h-6 text-white"
+              />
+              <p class="text-sm">{benefit}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </li>
+  </ul>
+</ContentSection>
