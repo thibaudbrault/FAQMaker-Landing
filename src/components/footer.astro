@@ -14,17 +14,14 @@ const links: Array<FooterLink> = [
 ];
 ---
 
-<footer class="relative text-xs flex items-center justify-between px-8 pb-2">
+<footer class="relative flex items-center justify-between px-8 pb-2 text-xs">
   <p>© 2023 FAQMaker</p>
   <ul class="relative flex items-center gap-4">
     {
       links.map((link) => (
         <li>
-          <a
-            class="link"
-            href={link.url}
-          >
-          {link.text}
+          <a class="link" href={link.url}>
+            {link.text}
           </a>
         </li>
       ))

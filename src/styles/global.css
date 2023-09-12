@@ -15,5 +15,5 @@
 }
 
 input {
-  @apply focus-visible:outline-none
+  @apply focus-visible:outline-none;
 }

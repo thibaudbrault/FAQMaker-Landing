@@ -8,6 +8,7 @@ const navItems: Array<NavItem> = [
   { title: "Pricing", url: "#pricing" },
 ];
 ---
+
 <header
   id="page-header"
   class="fixed top-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
@@ -23,7 +24,7 @@ const navItems: Array<NavItem> = [
           {
             navItems.map(({ title, url }) => (
               <li>
-                <a class="text-sm link" href={url}>
+                <a class="link text-sm" href={url}>
                   {title}
                 </a>
               </li>
@@ -62,7 +63,7 @@ const navItems: Array<NavItem> = [
               {
                 navItems.map(({ title, url }) => (
                   <li>
-                    <a class="block py-4 text-center text-xl link" href={url}>
+                    <a class="link block py-4 text-center text-xl" href={url}>
                       {title}
                     </a>
                   </li>
@@ -75,7 +76,6 @@ const navItems: Array<NavItem> = [
     </div>
   </div>
 </header>
-
 
 <script>
   import MicroModal from "micromodal";
