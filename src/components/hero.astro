@@ -1,5 +1,5 @@
 ---
-import { WaitlistMini } from "./Waitlist";
+import { WaitlistComponent } from "@/components/Waitlist";
 ---
 
 <section
@@ -15,6 +15,6 @@ import { WaitlistMini } from "./Waitlist";
       </h2>
       <p>Your company's knowledge base, by your team, for your team.</p>
     </div>
-    <WaitlistMini client:load />
+    <WaitlistComponent client:only="react" />
   </div>
 </section>

@@ -1,11 +1,13 @@
 ---
 import ContentSection from "@/components/content-section.astro";
-import { WaitlistFull } from "./Waitlist";
+import { WaitlistComponent } from "@/components/Waitlist";
 ---
 
 <ContentSection title="Join the waitlist" id="waitlist">
   <Fragment slot="lead">
     Be notified when <span class="text-primary">FAQMaker</span> is available
   </Fragment>
-  <WaitlistFull client:load />
+  <div>
+    <WaitlistComponent client:only="react" />
+  </div>
 </ContentSection>
