@@ -22,7 +22,7 @@ const proPlan: Array<string> = [
       <p class="font-bold text-3xl">
         $0<span class="font-normal text-xs">/mo</span>
       </p>
-      <ul class="mt-6">
+      <ul class="my-6">
         {
           freePlan.map((benefit) => (
             <li class="flex items-center gap-2">
@@ -36,6 +36,11 @@ const proPlan: Array<string> = [
           ))
         }
       </ul>
+      <button
+        disabled
+        class="rounded-md bg-default px-4 py-2 font-bold text-white"
+        >Coming soon</button
+      >
     </li>
     <li
       class="relative self-center rounded-md border border-primary bg-primary px-6 py-16"
@@ -44,7 +49,7 @@ const proPlan: Array<string> = [
       <p class="font-bold text-3xl">
         $2<span class="font-normal text-xs">/mo/user</span>
       </p>
-      <ul class="mt-6">
+      <ul class="my-6">
         {
           proPlan.map((benefit) => (
             <li class="flex items-center gap-2">
@@ -58,6 +63,11 @@ const proPlan: Array<string> = [
           ))
         }
       </ul>
+      <button
+        disabled
+        class="rounded-md bg-white px-4 py-2 font-bold text-primary"
+        >Coming soon</button
+      >
     </li>
   </ul>
 </ContentSection>
