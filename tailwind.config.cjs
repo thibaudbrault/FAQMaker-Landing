@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,svelte,ts,tsx,vue}"],
+  content: ["./src/**/*.{astro,js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -9,6 +9,7 @@ module.exports = {
       },
       colors: {
         primary: "var(--color-primary)",
+        primaryOffset: "var(--color-primary-offset)",
         secondary: "var(--color-secondary)",
       },
       textColor: {

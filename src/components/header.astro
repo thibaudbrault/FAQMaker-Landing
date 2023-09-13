@@ -1,23 +1,25 @@
 ---
 import { Icon } from "astro-icon";
-import ThemeSwitcher from "~/components/theme-switcher.astro";
-import type { NavItem } from "~/types";
+import ThemeSwitcher from "@/components/theme-switcher.astro";
+import type { NavItem } from "@/types";
 
 const navItems: Array<NavItem> = [
   { title: "Features", url: "#features" },
-  { title: "Compatibility", url: "#compatibility" },
-  { title: "Showcase", url: "#showcase" },
+  { title: "Pricing", url: "#pricing" },
 ];
 ---
 
 <header
   id="page-header"
-  class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
+  class="fixed top-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
-    <h1 class="sr-only">Astro</h1>
-    <Icon name="logomark" class="h-10" />
-    <Icon name="wordmark" class="hidden h-4 sm:block" />
+    <Icon
+      pack="uiw"
+      name="question-circle"
+      class="hidden h-10 text-primary sm:block"
+    />
+    <h1 class="font-semibold text-2xl">FAQMaker</h1>
   </a>
   <div>
     <div class="flex items-center gap-6">
@@ -26,7 +28,7 @@ const navItems: Array<NavItem> = [
           {
             navItems.map(({ title, url }) => (
               <li>
-                <a class="text-sm" href={url}>
+                <a class="link text-sm" href={url}>
                   {title}
                 </a>
               </li>
@@ -58,14 +60,14 @@ const navItems: Array<NavItem> = [
             </button>
           </header>
           <div class="flex justify-center">
-            <Icon name="logomark" class="h-16" />
+            <Icon pack="uiw" name="question-circle" class="h-16 text-primary" />
           </div>
           <nav>
-            <ul class="flex flex-col">
+            <ul class="flex flex-col gap-2">
               {
                 navItems.map(({ title, url }) => (
                   <li>
-                    <a class="block py-4 text-center text-xl" href={url}>
+                    <a class="link block py-4 text-center text-xl" href={url}>
                       {title}
                     </a>
                   </li>
