@@ -9,12 +9,19 @@ import { WaitlistComponent } from "@/components/Waitlist";
     class="mx-auto flex h-full w-3/4 flex-col items-center
   justify-center text-center text-white"
   >
-    <div class="mb-12">
+    <div class="mb-12 flex flex-col gap-4">
       <h2 class="font-bold text-5xl">
         Centralize your company's internal knowledge
       </h2>
-      <p>Your company's knowledge base, by your team, for your team.</p>
+      <p class="font-bold text-secondary text-xl">Ask once. Keep forever</p>
     </div>
-    <WaitlistComponent client:only="react" />
+    <div>
+      <WaitlistComponent client:only="react" />
+      <p class="text-xs">
+        Join the waitlist to be notified when <span class="text-primary"
+          >FAQMaker</span
+        > is launched
+      </p>
+    </div>
   </div>
 </section>
