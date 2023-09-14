@@ -6,16 +6,16 @@ import { WaitlistComponent } from "@/components/Waitlist";
   class="relative h-full bg-gradient-to-b from-black via-black to-teal-700"
 >
   <div
-    class="mx-auto flex h-full w-3/4 flex-col items-center
-  justify-center text-center text-white"
+    class="mx-auto flex h-full flex-col items-center justify-center px-8
+  text-center text-white md:w-3/4"
   >
     <div class="mb-12 flex flex-col gap-4">
       <h2 class="font-bold text-5xl">
         Centralize your company's internal knowledge
       </h2>
-      <p class="font-bold text-secondary text-xl">Ask once. Keep forever</p>
+      <p class="font-bold text-secondary text-xl">Ask once. Keep forever.</p>
     </div>
-    <div>
+    <div class="w-full">
       <WaitlistComponent client:only="react" />
       <p class="text-xs">
         Join the waitlist to be notified when <span class="text-primary"

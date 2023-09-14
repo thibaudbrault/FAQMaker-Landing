@@ -17,3 +17,43 @@
 input {
   @apply focus-visible:outline-none;
 }
+
+.waitlistForm {
+  @apply grid;
+  @apply grid-rows-1;
+  @apply relative;
+  @apply mx-auto;
+  @apply text-sm;
+  @apply w-full;
+  @apply md:text-base;
+  @apply md:w-1/2;
+}
+
+.waitlistForm > input {
+  @apply col-span-1;
+  @apply rounded-l-md;
+  @apply border;
+  @apply border-default;
+  @apply bg-transparent;
+  @apply p-1;
+  @apply md:px-2;
+}
+
+.waitlistForm > button {
+  @apply col-span-1;
+  @apply btn;
+  @apply rounded-r-md;
+  @apply bg-primary;
+  @apply uppercase;
+  @apply font-bold;
+  @apply px-2;
+  @apply py-1;
+  @apply md:px-6;
+}
+
+.waitlistForm > .msg-alert {
+  @apply text-sm;
+  @apply col-span-2;
+  @apply h-auto;
+  @apply overflow-hidden;
+}

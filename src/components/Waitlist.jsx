@@ -20,7 +20,7 @@ export const WaitlistComponent = () => {
         duplicate: "Too many subscribe attempts for this email address",
         button: "Join ➜",
       }}
-      className="[&_button]:btn [&_button]:rounded-r-md [&_button]:bg-primary [&_button]:px-6 [&_button]:py-1 [&_button]:font-bold [&_button]:uppercase [&_input]:rounded-l-md [&_input]:border [&_input]:border-default [&_input]:bg-transparent [&_input]:px-2 [&_input]:py-1"
+      className="waitlistForm"
     />
   );
 };
