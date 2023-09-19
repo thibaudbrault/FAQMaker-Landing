@@ -4,7 +4,14 @@ import ContentSection from "./content-section.astro";
 
 const freePlan: Array<string> = ["5 users", "Unlimited questions"];
 
-const proPlan: Array<string> = [
+const businessPlan: Array<string> = [
+  "100 users",
+  "Unlimited questions",
+  "Slack integration",
+  "Theme personalization",
+];
+
+const enterprisePlan: Array<string> = [
   "Unlimited users",
   "Unlimited questions",
   "Slack integration",
@@ -14,13 +21,13 @@ const proPlan: Array<string> = [
 
 <ContentSection title="Pricing" id="pricing">
   <Fragment slot="lead">Choose the right plan for your team.</Fragment>
-  <ul class="grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+  <ul class="grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
     <li
       class="relative self-center rounded-md border border-default bg-offset px-6 py-16"
     >
-      <h3 class="absolute left-4 top-4 font-bold text-xs">Free</h3>
-      <p class="font-bold text-3xl">
-        $0<span class="font-normal text-xs">/mo</span>
+      <h3 class="absolute left-4 top-4 text-xs font-bold">Free</h3>
+      <p class="text-3xl font-bold">
+        $0<span class="text-xs font-normal">/mo</span>
       </p>
       <ul class="my-6">
         {
@@ -38,20 +45,47 @@ const proPlan: Array<string> = [
       </ul>
       <button
         disabled
-        class="rounded-md bg-default px-4 py-2 font-bold text-white"
+        class="rounded-md bg-default px-4 py-2 font-bold text-default"
         >Coming soon</button
       >
     </li>
     <li
       class="relative self-center rounded-md border border-primary bg-primary px-6 py-16"
     >
-      <h3 class="absolute left-4 top-4 font-bold text-xs">Pro</h3>
-      <p class="font-bold text-3xl">
-        $2<span class="font-normal text-xs">/mo/user</span>
+      <h3 class="absolute left-4 top-4 text-xs font-bold">Business</h3>
+      <p class="text-3xl font-bold">
+        $29<span class="text-xs font-normal">/mo</span>
       </p>
       <ul class="my-6">
         {
-          proPlan.map((benefit) => (
+          businessPlan.map((benefit) => (
+            <li class="flex items-center gap-2">
+              <Icon
+                pack="mdi"
+                name="check-circle-outline"
+                class="h-6 text-white"
+              />
+              <p class="text-sm">{benefit}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <button
+        disabled
+        class="rounded-md bg-white px-4 py-2 font-bold text-primary"
+        >Coming soon</button
+      >
+    </li>
+    <li
+      class="relative self-center rounded-md border border-primary bg-primary px-6 py-16"
+    >
+      <h3 class="absolute left-4 top-4 text-xs font-bold">Enterprise</h3>
+      <p class="text-3xl font-bold">
+        $49<span class="text-xs font-normal">/mo</span>
+      </p>
+      <ul class="my-6">
+        {
+          enterprisePlan.map((benefit) => (
             <li class="flex items-center gap-2">
               <Icon
                 pack="mdi"
