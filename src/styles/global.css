@@ -15,45 +15,23 @@
 }
 
 input {
-  @apply focus-visible:outline-none;
+  @apply focus-visible:outline;
 }
 
-.waitlistForm {
-  @apply grid;
-  @apply grid-rows-1;
-  @apply relative;
-  @apply mx-auto;
-  @apply text-sm;
-  @apply w-full;
-  @apply md:text-base;
-  @apply md:w-1/2;
+.accordion__wrapper {
+  @apply !rounded-md;
 }
 
-.waitlistForm > input {
-  @apply col-span-1;
-  @apply rounded-l-md;
-  @apply border;
-  @apply border-default;
-  @apply bg-transparent;
-  @apply p-1;
-  @apply md:px-2;
+.accordion__header {
+  @apply !border-default;
+  @apply !bg-offset;
+  @apply !text-xl;
 }
 
-.waitlistForm > button {
-  @apply col-span-1;
-  @apply btn;
-  @apply rounded-r-md;
-  @apply bg-primary;
-  @apply uppercase;
-  @apply font-bold;
-  @apply px-2;
-  @apply py-1;
-  @apply md:px-6;
-}
-
-.waitlistForm > .msg-alert {
-  @apply text-sm;
-  @apply col-span-2;
-  @apply h-auto;
-  @apply overflow-hidden;
+.accordion__panel {
+  @apply !border-b-0;
+  @apply !border-l;
+  @apply !border-l-default;
+  @apply !border-r;
+  @apply !border-r-default;
 }

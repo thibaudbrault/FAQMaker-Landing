@@ -1,0 +1,25 @@
+---
+import { Accordion, AccordionItem } from "accessible-astro-components";
+import ContentSection from "./content-section.astro";
+---
+
+<ContentSection title="FAQ" id="faq">
+  <Fragment slot="lead">Find answers to your questions</Fragment>
+  <Accordion>
+    <AccordionItem header="How can I sign up ?" class="border-none bg-offset">
+      <p>
+        Choose a plan and create your account. You will start with a free
+        account and will have the possibility to upgrade it in your dashboard.
+      </p>
+    </AccordionItem>
+    <AccordionItem header="Can I cancel my subscription at any time ?">
+      <p>
+        Yes, you can cancel your subscription at any time by simply going into
+        your dashboard and clicking on the <b>"Cancel subscriction"</b> button.
+      </p>
+    </AccordionItem>
+    <AccordionItem header="How do I contact your team ?">
+      <p>To contact the team just send an email at</p>
+    </AccordionItem>
+  </Accordion>
+</ContentSection>
