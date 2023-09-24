@@ -1,7 +1,3 @@
----
-import { WaitlistComponent } from "@/components/Waitlist";
----
-
 <section
   class="relative h-full bg-gradient-to-b from-black via-black to-teal-700"
 >
@@ -10,18 +6,10 @@ import { WaitlistComponent } from "@/components/Waitlist";
   text-center text-white md:w-3/4"
   >
     <div class="mb-12 flex flex-col gap-4">
-      <h2 class="font-bold text-5xl">
+      <h2 class="text-5xl font-bold">
         Centralize your company's internal knowledge
       </h2>
-      <p class="font-bold text-secondary text-xl">Ask once. Keep forever.</p>
-    </div>
-    <div class="w-full">
-      <WaitlistComponent client:only="react" />
-      <p class="text-xs">
-        Join the waitlist to be notified when <span class="text-primary"
-          >FAQMaker</span
-        > is launched
-      </p>
+      <p class="text-xl font-bold text-secondary">Ask once. Keep forever.</p>
     </div>
   </div>
 </section>
