@@ -1,0 +1,92 @@
+---
+import ContentSection from "@/components/content-section.astro";
+import { Image } from "astro:assets";
+import faqMakerRegister from "@/assets/FAQMaker-Register.png";
+import faqMakerUsers from "@/assets/FAQMaker-Users.png";
+---
+
+<ContentSection title="Getting started" id="start">
+  <Fragment slot="lead">
+    Begin your journey with FAQMaker in a <span class="text-primary"
+      >few simple steps</span
+    >.
+  </Fragment>
+  <ul class="flex flex-col gap-16">
+    <li
+      class="flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2"
+    >
+      <div class="relative">
+        <Image
+          src={faqMakerRegister}
+          alt=""
+          class="rounded-md border border-default"
+        />
+        <p
+          class="absolute -left-3 -top-3 flex h-10 w-10 items-center justify-center rounded-full bg-offset text-xl font-bold shadow-xl"
+        >
+          1
+        </p>
+      </div>
+      <div class="flex flex-col gap-2 px-4">
+        <h3 class="text-xl font-bold">Create an account</h3>
+        <ul class="list-decimal">
+          <li>
+            Begin by entering your company's name and email. If you have a
+            personalized domain name, you can use it to add an easier way for
+            users to log in.
+          </li>
+          <li>
+            Provide your personal email address, which you will use to log in to
+            the app.
+          </li>
+          <li>
+            Next, choose the plan that best suits your needs. We offer three
+            different plans, each tailored to specific requirements and budget
+            considerations.
+          </li>
+        </ul>
+        <a
+          class="w-fit rounded-md bg-offset px-8 py-1 font-bold uppercase hover:text-primary"
+          style={{ fontVariants: "small-caps" }}
+          href="#pricing">Plans</a
+        >
+      </div>
+    </li>
+    <li
+      class="flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2"
+    >
+      <div class="flex flex-col gap-2 px-4">
+        <h3 class="text-xl font-bold">Add users</h3>
+        <p>
+          Adding users to your FAQMaker account is easy and flexible.
+          <br />
+           You have three convenient options:
+          <br />
+           ・Automatic registration with domain: Users with an email address
+          sharing your company's domain name can automatically log in to the
+          app.
+          <br />
+           ・Bulk upload with CSV: Add multiple users at once by uploading a CSV
+          file. It's a time-saving and efficient way to populate your knowledge
+          base.
+          <br />
+           ・Manual user invitations: For individual user additions, simply
+          enter their email, and we'll send them an invitation to join your
+          knowledge-sharing platform.
+        </p>
+      </div>
+      <div class="relative">
+        <Image
+          src={faqMakerUsers}
+          alt=""
+          class="rounded-md border border-default"
+        />
+        <p
+          class="absolute -right-3 -top-3 flex h-10 w-10 items-center justify-center rounded-full bg-offset text-lg font-bold shadow-xl"
+        >
+          2
+        </p>
+      </div>
+    </li>
+  </ul>
+</ContentSection>

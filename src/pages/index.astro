@@ -5,6 +5,7 @@ import Footer from "@/components/footer.astro";
 import Header from "@/components/header.astro";
 import Hero from "@/components/hero.astro";
 import Pricing from "@/components/pricing.astro";
+import Start from "@/components/start.astro";
 import "@/styles/index.css";
 import "@fontsource-variable/inter";
 
@@ -58,11 +59,12 @@ const description =
     </script>
   </head>
   <body
-    class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
+    class="h-full overflow-x-hidden bg-default text-base text-default selection:bg-secondary selection:text-white"
   >
     <Header />
     <Hero />
     <main class="space-y-24 px-8 py-32">
+      <Start />
       <Features />
       <Pricing />
       <Faq />
