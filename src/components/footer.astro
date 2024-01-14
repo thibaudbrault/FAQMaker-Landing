@@ -1,5 +1,4 @@
 ---
-import { Icon } from "astro-icon";
 import type { FooterLink } from "@/types";
 
 const links: Array<FooterLink> = [
@@ -14,17 +13,19 @@ const links: Array<FooterLink> = [
 ];
 ---
 
-<footer class="relative flex items-center justify-between px-8 pb-2 text-xs">
-  <p>© 2023 FAQMaker</p>
-  <ul class="relative flex items-center gap-4">
-    {
-      links.map((link) => (
-        <li>
-          <a class="link" href={link.url}>
-            {link.text}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+<footer class="bg-offset px-8 py-2">
+  <div class="mx-auto flex w-3/4 items-center justify-between">
+    <p><span class="text-xl font-bold text-primary">FAQMaker</span></p>
+    <ul class="relative flex items-center gap-4 text-sm">
+      {
+        links.map((link) => (
+          <li>
+            <a class="link" href={link.url}>
+              {link.text}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </footer>

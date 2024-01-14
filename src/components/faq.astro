@@ -4,27 +4,16 @@ import ContentSection from "./content-section.astro";
 ---
 
 <ContentSection title="FAQ" id="faq">
-  <Fragment slot="lead">Find answers to your questions</Fragment>
-  <Accordion>
-    <AccordionItem
-      header="How user-friendly is FAQMaker, and is it easy for employees to use ?"
-      class="border-none bg-offset"
+  <Fragment slot="lead">
+    Answers to common questions to better help you understand <span
+      class="text-primary">FAQMaker</span
     >
-      <p>
-        FAQMaker is designed with user-friendliness in mind. Its intuitive
-        interface ensures that employees can easily navigate the platform, ask
-        questions, find answers, and contribute their knowledge effortlessly. <br
-        />
-         Whether you're a tech-savvy pro or a newcomer to knowledge management
-        systems, you'll find FAQMaker a breeze to use. We've focused on creating
-        a platform that minimizes the learning curve, ensuring a smooth and
-        enjoyable experience for all users.
-      </p>
+  </Fragment>
+  <Accordion class="border-none">
+    <AccordionItem header="What is FAQMaker ?" class="border-none bg-offset">
+      <p>FAQMaker is</p>
     </AccordionItem>
-    <AccordionItem
-      header="How can FAQMaker streamline our internal knowledge management ?"
-      class="border-none bg-offset"
-    >
+    <AccordionItem header="Why FAQMaker ?" class="border-none bg-offset">
       <p>
         FAQMaker centralizes all company knowledge, making it easy for employees
         to ask questions, find answers, and share information in one organized
@@ -32,13 +21,12 @@ import ContentSection from "./content-section.astro";
       </p>
     </AccordionItem>
     <AccordionItem
-      header="How can FAQMaker help reduce the time employees spend searching for information ?"
+      header="Do I need a credit card to get started ?"
       class="border-none bg-offset"
     >
       <p>
-        FAQMaker's intelligent search and categorization features ensure that
-        employees can quickly find the information they need, reducing search
-        time and increasing productivity.
+        Nope! Simply create an account with the free plan and you can start
+        using FAQMaker.
       </p>
     </AccordionItem>
     <AccordionItem header="How do I cancel my FAQMaker subscription ?">

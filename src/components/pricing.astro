@@ -1,105 +1,107 @@
 ---
-import Icon from "astro-icon";
+import { Icon } from "astro-icon/components";
 import ContentSection from "./content-section.astro";
-
-const freePlan: Array<string> = ["5 users", "Unlimited questions"];
-
-const businessPlan: Array<string> = [
-  "100 users",
-  "Unlimited questions",
-  "Slack integration",
-  "Theme personalization",
-];
-
-const enterprisePlan: Array<string> = [
-  "Unlimited users",
-  "Unlimited questions",
-  "Slack integration",
-  "Theme personalization",
-];
 ---
 
 <ContentSection title="Pricing" id="pricing">
   <Fragment slot="lead">Choose the right plan for your team.</Fragment>
   <ul class="grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
     <li
-      class="relative self-center rounded-md border border-default bg-offset px-6 py-16"
+      class="relative self-stretch rounded-md border border-default bg-offset px-6 py-16"
     >
       <h3 class="absolute left-4 top-4 text-xs font-bold">Free</h3>
       <p class="text-3xl font-bold">
         $0<span class="text-xs font-normal">/mo</span>
       </p>
-      <ul class="my-6">
-        {
-          freePlan.map((benefit) => (
-            <li class="flex items-center gap-2">
-              <Icon
-                pack="mdi"
-                name="check-circle-outline"
-                class="h-6 text-primary"
-              />
-              <p class="text-sm">{benefit}</p>
-            </li>
-          ))
-        }
+      <ul class="my-6 flex flex-col gap-2">
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-primary" />
+          <p class="text-sm"><span class="font-bold">5</span> users</p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-primary" />
+          <p class="text-sm">
+            <span class="font-bold">Unlimited</span> questions
+          </p>
+        </li>
+        <li class="flex items-center gap-2 opacity-80">
+          <Icon name="mdi:close-circle-outline" class="h-5 w-5" />
+          <p class="text-sm line-through">Slack integration</p>
+        </li>
+        <li class="flex items-center gap-2 opacity-80">
+          <Icon name="mdi:close-circle-outline" class="h-5 w-5" />
+          <p class="text-sm line-through">Theme personalization</p>
+        </li>
       </ul>
       <button
         disabled
-        class="rounded-md bg-default px-4 py-2 font-bold text-default"
+        class="w-full rounded-md bg-default px-4 py-2 font-bold text-default"
         >Coming soon</button
       >
     </li>
     <li
-      class="relative self-center rounded-md border border-primary bg-primary px-6 py-16"
+      class="relative self-stretch rounded-md border border-primary bg-primary px-6 py-16"
     >
-      <h3 class="absolute left-4 top-4 text-xs font-bold">Business</h3>
+      <h3 class="absolute left-4 top-4 text-xs font-bold">Startup</h3>
       <p class="text-3xl font-bold">
-        $29<span class="text-xs font-normal">/mo</span>
+        $19<span class="text-xs font-normal">/mo</span>
       </p>
-      <ul class="my-6">
-        {
-          businessPlan.map((benefit) => (
-            <li class="flex items-center gap-2">
-              <Icon
-                pack="mdi"
-                name="check-circle-outline"
-                class="h-6 text-white"
-              />
-              <p class="text-sm">{benefit}</p>
-            </li>
-          ))
-        }
+      <ul class="my-6 flex flex-col gap-2">
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-white" />
+          <p class="text-sm"><span class="font-bold">100</span> users</p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-white" />
+          <p class="text-sm">
+            <span class="font-bold">Unlimited</span> questions
+          </p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-white" />
+          <p class="text-sm">Slack integration</p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-white" />
+          <p class="text-sm">Theme personalization</p>
+        </li>
       </ul>
       <button
         disabled
-        class="rounded-md bg-white px-4 py-2 font-bold text-primary"
+        class="w-full rounded-md bg-white px-4 py-2 font-bold text-primary"
         >Coming soon</button
       >
     </li>
     <li
-      class="relative self-center rounded-md border border-primary bg-primary px-6 py-16"
+      class="relative self-stretch rounded-md border border-primary bg-primary px-6 py-16"
     >
       <h3 class="absolute left-4 top-4 text-xs font-bold">Enterprise</h3>
       <p class="text-3xl font-bold">
-        $49<span class="text-xs font-normal">/mo</span>
+        $29<span class="text-xs font-normal">/mo</span>
       </p>
-      <ul class="my-6">
-        {
-          enterprisePlan.map((benefit) => (
-            <li class="flex items-center gap-2">
-              <Icon
-                pack="mdi"
-                name="check-circle-outline"
-                class="h-6 text-white"
-              />
-              <p class="text-sm">{benefit}</p>
-            </li>
-          ))
-        }
+      <ul class="my-6 flex flex-col gap-2">
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-white" />
+          <p class="text-sm"><span class="font-bold">Unlimited</span> users</p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-white" />
+          <p class="text-sm">
+            <span class="font-bold">Unlimited</span> questions
+          </p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-white" />
+          <p class="text-sm">Slack integration</p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:check-circle-outline" class="h-5 w-5 text-white" />
+          <p class="text-sm">Theme personalization</p>
+        </li>
       </ul>
       <button
         disabled
-        class="rounded-md bg-white px-4 py-2 font-bold text-primary"
+        class="w-full rounded-md bg-white px-4 py-2 font-bold text-primary"
         >Coming soon</button
       >
     </li>

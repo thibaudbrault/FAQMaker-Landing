@@ -1,11 +1,12 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import ThemeSwitcher from "@/components/theme-switcher.astro";
 import type { NavItem } from "@/types";
 
 const navItems: Array<NavItem> = [
   { title: "Features", url: "#features" },
   { title: "Pricing", url: "#pricing" },
+  { title: "FAQ", url: "#faq" },
 ];
 ---
 
@@ -15,9 +16,8 @@ const navItems: Array<NavItem> = [
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
     <Icon
-      pack="uiw"
-      name="question-circle"
-      class="hidden h-10 text-primary sm:block"
+      name="uiw:question-circle"
+      class="hidden h-8 w-8 text-primary sm:block"
     />
     <h1 class="text-3xl font-semibold">FAQMaker</h1>
   </a>
@@ -42,7 +42,7 @@ const navItems: Array<NavItem> = [
         class="btn sm:hidden"
         aria-label="Navigation"
       >
-        <Icon pack="mdi" name="menu" class="h-8" />
+        <Icon name="mdi:menu" class="h-8 w-8" />
       </button>
       <ThemeSwitcher />
     </div>
@@ -56,7 +56,7 @@ const navItems: Array<NavItem> = [
               class="btn"
               aria-label="Close navigation"
             >
-              <Icon pack="mdi" name="close" class="h-8" />
+              <Icon name="mdi:close" class="h-8 w-8" />
             </button>
           </header>
           <div class="flex justify-center gap-4">
