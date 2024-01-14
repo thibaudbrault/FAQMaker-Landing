@@ -1,31 +1,20 @@
----
-import type { FooterLink } from "@/types";
-
-const links: Array<FooterLink> = [
-  {
-    url: "/",
-    text: "Terms",
-  },
-  {
-    url: "/",
-    text: "Privacy",
-  },
-];
----
-
-<footer class="bg-offset px-8 py-2">
-  <div class="mx-auto flex w-3/4 items-center justify-between">
-    <p><span class="text-xl font-bold text-primary">FAQMaker</span></p>
-    <ul class="relative flex items-center gap-4 text-sm">
-      {
-        links.map((link) => (
-          <li>
-            <a class="link" href={link.url}>
-              {link.text}
-            </a>
-          </li>
-        ))
-      }
+<footer class="bg-offset px-8 py-10">
+  <div
+    class="mx-auto flex w-3/4 flex-col items-center justify-between gap-6 md:flex-row"
+  >
+    <p><span class="text-2xl font-bold text-primary">FAQMaker</span></p>
+    <ul class="relative flex items-center gap-2 text-sm capitalize">
+      <li>
+        <a class="link" href="mailto:contact@faqmaker.co">Contact us</a>
+      </li>
+      <p class="text-offset">|</p>
+      <li>
+        <a class="link" href="/"> Terms</a>
+      </li>
+      <p class="text-offset">|</p>
+      <li>
+        <a class="link" href="/"> Privacy</a>
+      </li>
     </ul>
   </div>
 </footer>

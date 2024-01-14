@@ -14,7 +14,7 @@ const navItems: Array<NavItem> = [
   id="page-header"
   class="fixed top-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
 >
-  <a class="flex items-center gap-3 hover:!text-default" href="#">
+  <a class="flex items-center gap-3 hover:!text-default" href="/">
     <Icon
       name="uiw:question-circle"
       class="hidden h-8 w-8 text-primary sm:block"
@@ -34,6 +34,14 @@ const navItems: Array<NavItem> = [
               </li>
             ))
           }
+          <li>
+            <a
+              class="rounded-md bg-primary px-3 py-2 font-bold transition-all duration-300 hover:bg-primaryOffset"
+              href="https://app.faqmaker.co/login"
+            >
+              Login
+            </a>
+          </li>
         </ul>
       </nav>
       <button
