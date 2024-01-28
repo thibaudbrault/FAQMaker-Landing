@@ -1,11 +1,21 @@
+:root {
+  --color-primary: theme("colors.teal.500");
+  --color-primary-offset: theme("colors.teal.600");
+  --color-secondary: theme("colors.yellow.400");
+  --color-text: theme("colors.slate.100");
+  --color-text-offset: theme("colors.slate.400");
+  --color-background: theme("colors.slate.900");
+  --color-background-offset: theme("colors.slate.800");
+  --color-border: theme("colors.slate.100" / 10%);
+}
+
 .btn {
-  @apply transition-colors duration-200;
-  @apply hover:bg-primaryOffset;
-  @apply focus:outline-none focus:ring-1 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-transparent;
+  @apply rounded-md transition-colors duration-300;
+  @apply focus:outline-none focus:ring-1 focus:ring-primaryOffset focus:ring-offset-2 focus:ring-offset-transparent;
 }
 
 .link {
-  @apply transition-colors duration-200;
+  @apply transition-colors duration-300;
   @apply hover:text-secondary;
 }
 
