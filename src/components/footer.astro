@@ -1,8 +1,13 @@
+---
+import { Image } from "astro:assets";
+import logo from "@/assets/logo-green.svg";
+---
+
 <footer class="bg-offset px-8 py-10">
   <div
     class="mx-auto flex w-3/4 flex-col items-center justify-between gap-6 md:flex-row"
   >
-    <p><span class="text-2xl font-bold text-primary">FAQMaker</span></p>
+    <Image src={logo} alt="FAQMaker" />
     <ul class="relative flex items-center gap-2 text-sm capitalize">
       <li>
         <a class="link" href="mailto:contact@faqmaker.co">Contact us</a>
