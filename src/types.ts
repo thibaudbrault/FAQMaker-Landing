@@ -2,11 +2,7 @@ export interface FeatureItem {
   description: string;
   icon: string;
   title: string;
-}
-
-export interface FooterLink {
-  text: string;
-  url: string;
+  premium?: boolean;
 }
 
 export interface NavItem {
