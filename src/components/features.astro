@@ -50,7 +50,7 @@ const features: Array<FeatureItem> = [
   <ul class="grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
     {
       features.map(({ title, description, icon, premium }) => (
-        <li class="group/item relative flex flex-col items-center gap-4 rounded-md border border-default bg-offset p-7 transition-all duration-300 hover:border-primary">
+        <li class="group/item relative flex flex-col items-center gap-4 overflow-hidden rounded-md border border-default bg-offset p-7 transition-all duration-300 hover:border-primary">
           <div class="h-16 w-16 rounded-full border-2 border-current p-3 transition-all duration-300 group-hover/item:border-primary group-hover/item:text-primary">
             <Icon name={icon} class="h-full w-full" />
           </div>
@@ -59,7 +59,7 @@ const features: Array<FeatureItem> = [
           </p>
           <p class="text-center text-sm text-offset">{description}</p>
           {premium && (
-            <p class="absolute bottom-0 left-0 right-0 overflow-hidden bg-primary text-center text-sm font-bold uppercase">
+            <p class="absolute bottom-0 left-0 right-0 bg-primary text-center text-sm font-bold uppercase">
               Premium
             </p>
           )}
