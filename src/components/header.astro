@@ -13,10 +13,10 @@ const navItems: Array<NavItem> = [
 
 <header
   id="page-header"
-  class="fixed top-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
+  class="fixed top-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-gray-12"
 >
   <h1>
-    <a class="hover:!text-default" href="/">
+    <a href="/">
       <Image src={logo} alt="FAQMaker" />
       <span class="hidden">FAQMaker</span>
     </a>
@@ -36,7 +36,7 @@ const navItems: Array<NavItem> = [
           }
           <li>
             <a
-              class="rounded-md bg-primary px-3 py-2 font-bold transition-all duration-300 hover:bg-primaryOffset"
+              class="rounded-md bg-teal-9 px-3 py-2 font-bold transition-all duration-300 hover:bg-teal-10"
               href="https://app.faqmaker.co/login"
             >
               Login
@@ -54,7 +54,7 @@ const navItems: Array<NavItem> = [
       </button>
     </div>
     <div id="menu-modal" class="modal hidden" aria-hidden="true">
-      <div class="fixed inset-0 bg-default px-8 py-4 text-default">
+      <div class="fixed inset-0 bg-gray-2 px-8 py-4 text-gray-12">
         <div class="space-y-4" role="dialog" aria-modal="true">
           <header class="flex items-center justify-between text-right">
             <Image src={logo} alt="FAQMaker" />
@@ -80,7 +80,7 @@ const navItems: Array<NavItem> = [
               }
               <li>
                 <a
-                  class="rounded-md bg-primary px-3 py-2 font-bold transition-all duration-300 hover:bg-primaryOffset"
+                  class="rounded-md bg-teal-9 px-3 py-2 font-bold transition-all duration-300 hover:bg-teal-10"
                   href="https://app.faqmaker.co/login"
                 >
                   Login
@@ -145,7 +145,7 @@ const navItems: Array<NavItem> = [
 <style>
   .fixed-header {
     @apply fixed bottom-auto top-0;
-    @apply border-default bg-default text-default;
+    @apply border-b border-b-gray-6 bg-gray-2 text-gray-12;
   }
   .modal.is-open {
     @apply block;

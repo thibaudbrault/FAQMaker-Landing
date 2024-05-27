@@ -1,54 +1,64 @@
 ---
-import { Accordion, AccordionItem } from "accessible-astro-components";
 import ContentSection from "./content-section.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <ContentSection title="FAQ" id="faq">
   <Fragment slot="lead">
     Answers to common questions to better help you understand <span
-      class="text-primary">FAQMaker</span
+      class="text-teal-11">FAQMaker</span
     >
   </Fragment>
-  <Accordion class="border-none">
-    <AccordionItem header="What is FAQMaker ?" class="border-none bg-offset">
-      <p>FAQMaker is</p>
-    </AccordionItem>
-    <AccordionItem
-      header="Why do I need FAQMaker ?"
-      class="border-none bg-offset"
-    >
-      <p>
-        FAQMaker centralizes all company knowledge, making it easy for employees
-        to ask questions, find answers, and share information in one organized
-        platform.
-      </p>
-    </AccordionItem>
-    <AccordionItem
-      header="Do I need a credit card to get started ?"
-      class="border-none bg-offset"
-    >
-      <p>
-        Nope! Simply create an account with the free plan and you're good to go.
-      </p>
-    </AccordionItem>
-    <AccordionItem header="How do I cancel my FAQMaker subscription ?">
-      <p>
-        Canceling your FAQMaker subscription is quick and hassle-free. <br />
+  <div class="w-full flex flex-col gap-4">
+    <details class="cursor-pointer w-full bg-gray-3 border border-gray-6 rounded-md p-4 [&_svg]:open:rotate-90">
+      <summary class="text-xl font-semibold list-none flex justify-between items-center">
+        <span>What is FAQMaker ?</span>
+        <Icon name="mdi:chevron-right-circle-outline" class="w-6 h-6 rotate-0 transform transition-all duration-300" />
+      </summary>
+      <p class="px-4 py-8">FAQMaker is ...</p>
+    </details>
+
+    <details class="cursor-pointer w-full bg-gray-3 border border-gray-6 rounded-md p-4 [&_svg]:open:rotate-90">
+      <summary class="text-xl font-semibold list-none flex justify-between items-center">
+        <span>Why do I need FAQMaker ?</span>
+        <Icon name="mdi:chevron-right-circle-outline" class="w-6 h-6 rotate-0 transform transition-all duration-300" />
+      </summary>
+      <p class="px-4 py-8">FAQMaker centralizes all company knowledge, making it easy for employees
+          to ask questions, find answers, and share information in one organized
+          platform.</p>
+    </details>
+
+    <details class="cursor-pointer w-full bg-gray-3 border border-gray-6 rounded-md p-4 [&_svg]:open:rotate-90">
+      <summary class="text-xl font-semibold list-none flex justify-between items-center">
+        <span>Do I need a credit card to get started ?</span>
+        <Icon name="mdi:chevron-right-circle-outline" class="w-6 h-6 rotate-0 transform transition-all duration-300" />
+      </summary>
+      <p class="px-4 py-8">Nope! Simply create an account with the free plan and you're good to go.</p>
+    </details>
+
+    <details class="cursor-pointer w-full bg-gray-3 border border-gray-6 rounded-md p-4 [&_svg]:open:rotate-90">
+      <summary class="text-xl font-semibold list-none flex justify-between items-center">
+        <span>How do I cancel my FAQMaker subscription ?</span>
+        <Icon name="mdi:chevron-right-circle-outline" class="w-6 h-6 rotate-0 transform transition-all duration-300" />
+      </summary>
+      <p class="px-4 py-8">Canceling your FAQMaker subscription is quick and hassle-free. <br />
          Simply log in to your account, navigate to the 'Billing' section, and
         follow the straightforward cancellation instructions. Your subscription
-        can be canceled in a matter of minutes.
-      </p>
-    </AccordionItem>
-    <AccordionItem header="Can I report a bug / request a feature ?">
-      <p>
-        Yeah! If you find any bug or want a feature added just contact us at
+        can be canceled in a matter of minutes.</p>
+    </details>
+
+    <details class="cursor-pointer w-full bg-gray-3 border border-gray-6 rounded-md p-4 [&_svg]:open:rotate-90">
+      <summary class="text-xl font-semibold list-none flex justify-between items-center">
+        <span>Can I report a bug / request a feature ?</span>
+        <Icon name="mdi:chevron-right-circle-outline" class="w-6 h-6 rotate-0 transform transition-all duration-300" />
+      </summary>
+      <p class="px-4 py-8">Yeah! If you find any bug or want a feature added just contact us at
         <a href="mailto:contact@faqmaker.co">
-          <span class="font-semibold hover:text-secondary">
+          <span class="font-semibold hover:text-teal-11">
             contact@faqmaker.co
           </span>
         </a><br /> Our dedicated team will answer in the shortest delay to
-        ensure that your experience with FAQMaker remains the best.
-      </p>
-    </AccordionItem>
-  </Accordion>
+        ensure that your experience with FAQMaker remains the best.</p>
+    </details>
+  </div>
 </ContentSection>

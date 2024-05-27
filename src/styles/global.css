@@ -1,22 +1,21 @@
-:root {
-  --color-primary: theme("colors.teal.500");
-  --color-primary-offset: theme("colors.teal.600");
-  --color-secondary: theme("colors.yellow.400");
-  --color-text: theme("colors.slate.100");
-  --color-text-offset: theme("colors.slate.400");
-  --color-background: theme("colors.slate.900");
-  --color-background-offset: theme("colors.slate.800");
-  --color-border: theme("colors.slate.100" / 10%);
-}
+@import '@radix-ui/colors/teal';
+@import '@radix-ui/colors/teal-alpha';
+@import '@radix-ui/colors/teal-dark';
+@import '@radix-ui/colors/teal-dark-alpha';
+
+@import '@radix-ui/colors/gray';
+@import '@radix-ui/colors/gray-alpha';
+@import '@radix-ui/colors/gray-dark';
+@import '@radix-ui/colors/gray-dark-alpha';
 
 .btn {
   @apply rounded-md transition-colors duration-300;
-  @apply focus:outline-none focus:ring-1 focus:ring-primaryOffset focus:ring-offset-2 focus:ring-offset-transparent;
+  @apply focus:outline-none focus:ring-1 focus:ring-gray-12 focus:ring-offset-2 focus:ring-offset-transparent;
 }
 
 .link {
   @apply transition-colors duration-300;
-  @apply hover:text-secondary;
+  @apply hover:text-teal-11;
 }
 
 .gradient-text {
@@ -26,22 +25,4 @@
 
 input {
   @apply focus-visible:outline;
-}
-
-.accordion__wrapper {
-  @apply !rounded-md;
-}
-
-.accordion__header {
-  @apply !border-default;
-  @apply !bg-offset;
-  @apply !text-xl;
-}
-
-.accordion__panel {
-  @apply !border-b-0;
-  @apply !border-l;
-  @apply !border-l-default;
-  @apply !border-r;
-  @apply !border-r-default;
 }
