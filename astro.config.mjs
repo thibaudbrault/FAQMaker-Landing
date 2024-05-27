@@ -4,8 +4,5 @@ import icon from "astro-icon";
 
 export default defineConfig({
   site: "https://faqmaker.co",
-  integrations: [
-    tailwind(),
-    icon()
-  ],
+  integrations: [tailwind(), icon()],
 });

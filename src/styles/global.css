@@ -1,12 +1,12 @@
-@import '@radix-ui/colors/teal';
-@import '@radix-ui/colors/teal-alpha';
-@import '@radix-ui/colors/teal-dark';
-@import '@radix-ui/colors/teal-dark-alpha';
+@import "@radix-ui/colors/teal";
+@import "@radix-ui/colors/teal-alpha";
+@import "@radix-ui/colors/teal-dark";
+@import "@radix-ui/colors/teal-dark-alpha";
 
-@import '@radix-ui/colors/gray';
-@import '@radix-ui/colors/gray-alpha';
-@import '@radix-ui/colors/gray-dark';
-@import '@radix-ui/colors/gray-dark-alpha';
+@import "@radix-ui/colors/gray";
+@import "@radix-ui/colors/gray-alpha";
+@import "@radix-ui/colors/gray-dark";
+@import "@radix-ui/colors/gray-dark-alpha";
 
 .btn {
   @apply rounded-md transition-colors duration-300;
