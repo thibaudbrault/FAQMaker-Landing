@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import ContentSection from "@/components/content-section.astro";
 import type { FeatureItem } from "@/types";
 
@@ -18,11 +18,13 @@ const features: Array<FeatureItem> = [
     title: "Customizable",
     description: "Use your brand's colors to make it your site.",
     icon: "ion:ios-color-palette",
+    premium: true,
   },
   {
     title: "Slack Integration",
     description: "Connect your FAQMaker to Slack to never miss a new question.",
     icon: "ci:slack",
+    premium: true,
   },
   {
     title: "Search",
@@ -39,29 +41,30 @@ const features: Array<FeatureItem> = [
 
 <ContentSection title="Features" id="features">
   <Fragment slot="lead">
-    FAQMaker gives you the tools to build an <span class="text-primary"
+    FAQMaker gives you the tools to build an <span class="text-teal-11"
       >internal knowledge base</span
-    >. <br /> It allows your employees to <span class="text-primary"
+    >. <br /> It allows your employees to <span class="text-teal-11"
       >quickly ask questions</span
     > and receive answers from colleagues.
   </Fragment>
-  <ul class="grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+  <ul class="grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
     {
-      features.map(({ title, description, icon }) => (
-        <li class="group/item flex flex-col items-center gap-4 rounded-md border border-default bg-offset p-6 hover:border-primary">
-          <div class="h-16 w-16 rounded-full border-2 border-current p-3 group-hover/item:border-primary group-hover/item:text-primary">
-            <Icon name={icon} />
+      features.map(({ title, description, icon, premium }) => (
+        <li class="group/item relative flex flex-col items-center gap-4 overflow-hidden rounded-md border border-gray-6 bg-gray-3 p-7 transition-all duration-300 hover:border-teal-10">
+          <div class="h-16 w-16 rounded-full border-2 border-gray-12 p-3 transition-all duration-300 group-hover/item:border-teal-10 group-hover/item:text-teal-10">
+            <Icon name={icon} class="h-full w-full" />
           </div>
-          <p class="text-center text-xl font-extrabold group-hover/item:text-primary">
+          <p class="text-center text-xl font-extrabold transition-all duration-300 group-hover/item:text-teal-10">
             {title}
           </p>
-          <p class="text-center text-sm text-offset">{description}</p>
+          <p class="text-center text-sm text-gray-11">{description}</p>
+          {premium && (
+            <p class="absolute bottom-0 left-0 right-0 bg-teal-9 text-center text-sm font-bold uppercase transition-all duration-300 group-hover/item:bg-teal-10">
+              Premium
+            </p>
+          )}
         </li>
       ))
     }
   </ul>
-  <a
-    class="w-fit cursor-pointer rounded-md bg-offset px-16 py-2 font-bold uppercase hover:text-primary"
-    style={{ fontVariant: "small-caps" }}>Roadmap</a
-  >
 </ContentSection>

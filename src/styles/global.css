@@ -1,12 +1,21 @@
+@import "@radix-ui/colors/teal";
+@import "@radix-ui/colors/teal-alpha";
+@import "@radix-ui/colors/teal-dark";
+@import "@radix-ui/colors/teal-dark-alpha";
+
+@import "@radix-ui/colors/gray";
+@import "@radix-ui/colors/gray-alpha";
+@import "@radix-ui/colors/gray-dark";
+@import "@radix-ui/colors/gray-dark-alpha";
+
 .btn {
-  @apply transition-colors duration-200;
-  @apply hover:bg-primaryOffset;
-  @apply focus:outline-none focus:ring-1 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-transparent;
+  @apply rounded-md transition-colors duration-300;
+  @apply focus:outline-none focus:ring-1 focus:ring-gray-12 focus:ring-offset-2 focus:ring-offset-transparent;
 }
 
 .link {
-  @apply transition-colors duration-200;
-  @apply hover:text-secondary;
+  @apply transition-colors duration-300;
+  @apply hover:text-teal-11;
 }
 
 .gradient-text {
@@ -16,22 +25,4 @@
 
 input {
   @apply focus-visible:outline;
-}
-
-.accordion__wrapper {
-  @apply !rounded-md;
-}
-
-.accordion__header {
-  @apply !border-default;
-  @apply !bg-offset;
-  @apply !text-xl;
-}
-
-.accordion__panel {
-  @apply !border-b-0;
-  @apply !border-l;
-  @apply !border-l-default;
-  @apply !border-r;
-  @apply !border-r-default;
 }

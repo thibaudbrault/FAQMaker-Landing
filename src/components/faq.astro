@@ -1,67 +1,107 @@
 ---
-import { Accordion, AccordionItem } from "accessible-astro-components";
 import ContentSection from "./content-section.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <ContentSection title="FAQ" id="faq">
-  <Fragment slot="lead">Find answers to your questions</Fragment>
-  <Accordion>
-    <AccordionItem
-      header="How user-friendly is FAQMaker, and is it easy for employees to use ?"
-      class="border-none bg-offset"
+  <Fragment slot="lead">
+    Answers to common questions to better help you understand <span
+      class="text-teal-11">FAQMaker</span
     >
-      <p>
-        FAQMaker is designed with user-friendliness in mind. Its intuitive
-        interface ensures that employees can easily navigate the platform, ask
-        questions, find answers, and contribute their knowledge effortlessly. <br
+  </Fragment>
+  <div class="flex w-full flex-col gap-4">
+    <details
+      class="w-full cursor-pointer rounded-md border border-gray-6 bg-gray-3 p-4 [&_svg]:open:rotate-90"
+    >
+      <summary
+        class="flex list-none items-center justify-between text-xl font-semibold"
+      >
+        <span>What is FAQMaker ?</span>
+        <Icon
+          name="mdi:chevron-right-circle-outline"
+          class="h-6 w-6 rotate-0 transform transition-all duration-300"
         />
-         Whether you're a tech-savvy pro or a newcomer to knowledge management
-        systems, you'll find FAQMaker a breeze to use. We've focused on creating
-        a platform that minimizes the learning curve, ensuring a smooth and
-        enjoyable experience for all users.
-      </p>
-    </AccordionItem>
-    <AccordionItem
-      header="How can FAQMaker streamline our internal knowledge management ?"
-      class="border-none bg-offset"
+      </summary>
+      <p class="px-4 py-8">FAQMaker is ...</p>
+    </details>
+
+    <details
+      class="w-full cursor-pointer rounded-md border border-gray-6 bg-gray-3 p-4 [&_svg]:open:rotate-90"
     >
-      <p>
+      <summary
+        class="flex list-none items-center justify-between text-xl font-semibold"
+      >
+        <span>Why do I need FAQMaker ?</span>
+        <Icon
+          name="mdi:chevron-right-circle-outline"
+          class="h-6 w-6 rotate-0 transform transition-all duration-300"
+        />
+      </summary>
+      <p class="px-4 py-8">
         FAQMaker centralizes all company knowledge, making it easy for employees
         to ask questions, find answers, and share information in one organized
         platform.
       </p>
-    </AccordionItem>
-    <AccordionItem
-      header="How can FAQMaker help reduce the time employees spend searching for information ?"
-      class="border-none bg-offset"
+    </details>
+
+    <details
+      class="w-full cursor-pointer rounded-md border border-gray-6 bg-gray-3 p-4 [&_svg]:open:rotate-90"
     >
-      <p>
-        FAQMaker's intelligent search and categorization features ensure that
-        employees can quickly find the information they need, reducing search
-        time and increasing productivity.
+      <summary
+        class="flex list-none items-center justify-between text-xl font-semibold"
+      >
+        <span>Do I need a credit card to get started ?</span>
+        <Icon
+          name="mdi:chevron-right-circle-outline"
+          class="h-6 w-6 rotate-0 transform transition-all duration-300"
+        />
+      </summary>
+      <p class="px-4 py-8">
+        Nope! Simply create an account with the free plan and you're good to go.
       </p>
-    </AccordionItem>
-    <AccordionItem header="How do I cancel my FAQMaker subscription ?">
-      <p>
-        Canceling your FAQMaker subscription is quick and hassle-free. Simply
-        log in to your account, navigate to the 'Billing' section, and follow
-        the straightforward cancellation instructions. Your subscription can be
-        canceled in a matter of minutes.
-      </p>
-    </AccordionItem>
-    <AccordionItem
-      header="How can I get in touch with the FAQMaker support team ?"
+    </details>
+
+    <details
+      class="w-full cursor-pointer rounded-md border border-gray-6 bg-gray-3 p-4 [&_svg]:open:rotate-90"
     >
-      <p>
-        Our support team is here to assist you through email. You can reach us
-        at <a
-          class="font-semibold underline hover:text-secondary"
-          href="mailto:contact@faqmaker.co">contact@faqmaker.co</a
-        > for any questions, assistance, or inquiries you may have. <br /> We
-        value your feedback and questions, and our dedicated team is committed
-        to providing timely and helpful responses via email. <br /> Feel free to
-        contact us whenever you need assistance or have any concerns.
+      <summary
+        class="flex list-none items-center justify-between text-xl font-semibold"
+      >
+        <span>How do I cancel my FAQMaker subscription ?</span>
+        <Icon
+          name="mdi:chevron-right-circle-outline"
+          class="h-6 w-6 rotate-0 transform transition-all duration-300"
+        />
+      </summary>
+      <p class="px-4 py-8">
+        Canceling your FAQMaker subscription is quick and hassle-free. <br />
+        Simply log in to your account, navigate to the 'Billing' section, and follow
+        the straightforward cancellation instructions. Your subscription can be canceled
+        in a matter of minutes.
       </p>
-    </AccordionItem>
-  </Accordion>
+    </details>
+
+    <details
+      class="w-full cursor-pointer rounded-md border border-gray-6 bg-gray-3 p-4 [&_svg]:open:rotate-90"
+    >
+      <summary
+        class="flex list-none items-center justify-between text-xl font-semibold"
+      >
+        <span>Can I report a bug / request a feature ?</span>
+        <Icon
+          name="mdi:chevron-right-circle-outline"
+          class="h-6 w-6 rotate-0 transform transition-all duration-300"
+        />
+      </summary>
+      <p class="px-4 py-8">
+        Yeah! If you find any bug or want a feature added just contact us at
+        <a href="mailto:contact@faqmaker.co">
+          <span class="font-semibold hover:text-teal-11">
+            contact@faqmaker.co
+          </span>
+        </a><br /> Our dedicated team will answer in the shortest delay to ensure
+        that your experience with FAQMaker remains the best.
+      </p>
+    </details>
+  </div>
 </ContentSection>

@@ -1,30 +1,25 @@
 ---
-import { Icon } from "astro-icon";
-import type { FooterLink } from "@/types";
-
-const links: Array<FooterLink> = [
-  {
-    url: "/",
-    text: "Terms",
-  },
-  {
-    url: "/",
-    text: "Privacy",
-  },
-];
+import { Image } from "astro:assets";
+import logo from "@/assets/logo-green.svg";
 ---
 
-<footer class="relative flex items-center justify-between px-8 pb-2 text-xs">
-  <p>© 2023 FAQMaker</p>
-  <ul class="relative flex items-center gap-4">
-    {
-      links.map((link) => (
-        <li>
-          <a class="link" href={link.url}>
-            {link.text}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+<footer class="bg-gray-2 px-8 py-10">
+  <div
+    class="mx-auto flex w-3/4 flex-col items-center justify-between gap-6 md:flex-row"
+  >
+    <Image src={logo} alt="FAQMaker" />
+    <ul class="relative flex items-center gap-2 text-sm capitalize">
+      <li>
+        <a class="link" href="mailto:contact@faqmaker.co">Contact us</a>
+      </li>
+      <p class="text-teal-9">|</p>
+      <li>
+        <a class="link" href="/"> Terms</a>
+      </li>
+      <p class="text-teal-9">|</p>
+      <li>
+        <a class="link" href="/"> Privacy</a>
+      </li>
+    </ul>
+  </div>
 </footer>

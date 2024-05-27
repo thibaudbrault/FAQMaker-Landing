@@ -1,26 +1,26 @@
 ---
-import { Icon } from "astro-icon";
-import ThemeSwitcher from "@/components/theme-switcher.astro";
+import logo from "@/assets/logo.svg";
 import type { NavItem } from "@/types";
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
 
 const navItems: Array<NavItem> = [
   { title: "Features", url: "#features" },
   { title: "Pricing", url: "#pricing" },
+  { title: "FAQ", url: "#faq" },
 ];
 ---
 
 <header
   id="page-header"
-  class="fixed top-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
+  class="fixed top-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-gray-12"
 >
-  <a class="flex items-center gap-3 hover:!text-default" href="#">
-    <Icon
-      pack="uiw"
-      name="question-circle"
-      class="hidden h-10 text-primary sm:block"
-    />
-    <h1 class="text-3xl font-semibold">FAQMaker</h1>
-  </a>
+  <h1>
+    <a href="/">
+      <Image src={logo} alt="FAQMaker" />
+      <span class="hidden">FAQMaker</span>
+    </a>
+  </h1>
   <div>
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
@@ -34,6 +34,14 @@ const navItems: Array<NavItem> = [
               </li>
             ))
           }
+          <li>
+            <a
+              class="rounded-md bg-teal-9 px-3 py-2 font-bold transition-all duration-300 hover:bg-teal-10"
+              href="https://app.faqmaker.co/login"
+            >
+              Login
+            </a>
+          </li>
         </ul>
       </nav>
       <button
@@ -42,37 +50,42 @@ const navItems: Array<NavItem> = [
         class="btn sm:hidden"
         aria-label="Navigation"
       >
-        <Icon pack="mdi" name="menu" class="h-8" />
+        <Icon name="mdi:menu" class="h-8 w-8" />
       </button>
-      <ThemeSwitcher />
     </div>
     <div id="menu-modal" class="modal hidden" aria-hidden="true">
-      <div class="fixed inset-0 bg-default px-8 py-4 text-default">
+      <div class="fixed inset-0 bg-gray-2 px-8 py-4 text-gray-12">
         <div class="space-y-4" role="dialog" aria-modal="true">
-          <header class="text-right">
+          <header class="flex items-center justify-between text-right">
+            <Image src={logo} alt="FAQMaker" />
             <button
               id="close-nav-button"
               type="button"
               class="btn"
               aria-label="Close navigation"
             >
-              <Icon pack="mdi" name="close" class="h-8" />
+              <Icon name="mdi:close" class="h-8 w-8" />
             </button>
           </header>
-          <div class="flex justify-center gap-4">
-            <p class="text-5xl font-bold text-primary">FAQMaker</p>
-          </div>
           <nav>
-            <ul class="flex flex-col gap-2">
+            <ul class="flex flex-col items-center gap-8">
               {
                 navItems.map(({ title, url }) => (
                   <li>
-                    <a class="link block py-4 text-center text-xl" href={url}>
+                    <a class="link block text-center text-xl" href={url}>
                       {title}
                     </a>
                   </li>
                 ))
               }
+              <li>
+                <a
+                  class="rounded-md bg-teal-9 px-3 py-2 font-bold transition-all duration-300 hover:bg-teal-10"
+                  href="https://app.faqmaker.co/login"
+                >
+                  Login
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -132,7 +145,7 @@ const navItems: Array<NavItem> = [
 <style>
   .fixed-header {
     @apply fixed bottom-auto top-0;
-    @apply border-default bg-default text-default;
+    @apply border-b border-b-gray-6 bg-gray-2 text-gray-12;
   }
   .modal.is-open {
     @apply block;
