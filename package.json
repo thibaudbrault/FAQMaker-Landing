@@ -29,7 +29,7 @@
     "@iconify-json/ic": "^1.1.17",
     "@iconify-json/ion": "^1.1.18",
     "@iconify-json/mdi": "^1.1.64",
-    "@iconify-json/uiw": "^1.1.11",
+    "@iconify-json/uiw": "^1.1.12",
     "@radix-ui/colors": "^3.0.0",
     "micromodal": "^0.4.10",
     "sharp": "^0.33.4",
