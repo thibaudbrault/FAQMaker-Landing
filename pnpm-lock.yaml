@@ -27,8 +27,8 @@ importers:
         specifier: ^1.1.64
         version: 1.1.64
       '@iconify-json/uiw':
-        specifier: ^1.1.11
-        version: 1.1.11
+        specifier: ^1.1.12
+        version: 1.1.12
       '@radix-ui/colors':
         specifier: ^3.0.0
         version: 3.0.0
@@ -516,8 +516,8 @@ packages:
   '@iconify-json/mdi@1.1.64':
     resolution: {integrity: sha512-zGeo5TjhNFAY6FmSDBLAzDO811t77r6v/mDi7CAL9w5eXqKez6bIjk8R9AL/RHIeq44ALP4Ozr4lMqFTkHr7ug==}
 
-  '@iconify-json/uiw@1.1.11':
-    resolution: {integrity: sha512-scdwkAdLnj6/ALyh8KEAjVf2MlAPN/8rMSE2oloWwYX9TkLfeDfzWQ7yz24rXyIVQM58FivrMkniTxtuw7bsPw==}
+  '@iconify-json/uiw@1.1.12':
+    resolution: {integrity: sha512-0GFwzIBXDsVjVwphPtXBKjqZX1oBsElkVLHv4RDB8giQPfNJSj2noenvnWHn0OOMcSLLIf+vmQlM6euyMiAvMA==}
 
   '@iconify/tools@3.0.7':
     resolution: {integrity: sha512-DxfhFLMnooS34dHelpGUnnYrxLZHs0czC1CgrBhAbuL8ddVzBb2VEQm8kh9qGh7A34qeXAB5iSHH3A72rAaFrg==}
@@ -2842,7 +2842,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/uiw@1.1.11':
+  '@iconify-json/uiw@1.1.12':
     dependencies:
       '@iconify/types': 2.0.0
 
