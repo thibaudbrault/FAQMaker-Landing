@@ -64,11 +64,11 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       prettier-plugin-astro:
-        specifier: ^0.14.0
-        version: 0.14.0
+        specifier: ^0.14.1
+        version: 0.14.1
       prettier-plugin-tailwindcss:
         specifier: ^0.5.14
-        version: 0.5.14(prettier-plugin-astro@0.14.0)(prettier@3.3.3)
+        version: 0.5.14(prettier-plugin-astro@0.14.1)(prettier@3.3.3)
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
@@ -91,9 +91,6 @@ packages:
 
   '@antfu/utils@0.7.7':
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
-
-  '@astrojs/compiler@1.8.2':
-    resolution: {integrity: sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==}
 
   '@astrojs/compiler@2.10.2':
     resolution: {integrity: sha512-bvH+v8AirwpRWCkYJEyWYdc5Cs/BjG2ZTxIJzttHilXgfKJAdW2496KsUQKzf5j2tOHtaHXKKn9hb9WZiBGpEg==}
@@ -1863,8 +1860,8 @@ packages:
     resolution: {integrity: sha512-gYBeFTZLu055D8Vv3cSPox/0iTPtkzxpLroSYYA7WXgRi31WCJ51Uyl8ZiPeUUjyvs2MBzK+S8v9JVUgHU/Sqw==}
     engines: {node: '>=18.12'}
 
-  prettier-plugin-astro@0.14.0:
-    resolution: {integrity: sha512-7jRGJsexaRIyUzTk8uzXlP45cw6DQ5Ci4bTe0xCBCcuO1Fff8jJy9oI+kRCQKSdDFTSAArMSg8GpvzlKBtSaZA==}
+  prettier-plugin-astro@0.14.1:
+    resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
     engines: {node: ^14.15.0 || >=16.0.0}
 
   prettier-plugin-tailwindcss@0.5.14:
@@ -2397,8 +2394,6 @@ snapshots:
   '@antfu/utils@0.7.10': {}
 
   '@antfu/utils@0.7.7': {}
-
-  '@astrojs/compiler@1.8.2': {}
 
   '@astrojs/compiler@2.10.2': {}
 
@@ -4413,17 +4408,17 @@ snapshots:
       find-yarn-workspace-root2: 1.2.16
       which-pm: 3.0.0
 
-  prettier-plugin-astro@0.14.0:
+  prettier-plugin-astro@0.14.1:
     dependencies:
-      '@astrojs/compiler': 1.8.2
+      '@astrojs/compiler': 2.10.2
       prettier: 3.3.3
       sass-formatter: 0.7.8
 
-  prettier-plugin-tailwindcss@0.5.14(prettier-plugin-astro@0.14.0)(prettier@3.3.3):
+  prettier-plugin-tailwindcss@0.5.14(prettier-plugin-astro@0.14.1)(prettier@3.3.3):
     dependencies:
       prettier: 3.3.3
     optionalDependencies:
-      prettier-plugin-astro: 0.14.0
+      prettier-plugin-astro: 0.14.1
 
   prettier@3.3.3: {}
 
