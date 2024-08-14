@@ -51,15 +51,15 @@ const features: Array<FeatureItem> = [
     {
       features.map(({ title, description, icon, premium }) => (
         <li class="group/item relative flex flex-col items-center gap-4 overflow-hidden rounded-md border border-gray-6 bg-gray-3 p-7 transition-all duration-300 hover:border-teal-10">
-          <div class="h-16 w-16 rounded-full border-2 border-gray-12 p-3 transition-all duration-300 group-hover/item:border-teal-10 group-hover/item:text-teal-10">
-            <Icon name={icon} class="h-full w-full" />
+          <div class="size-16 rounded-full border-2 border-gray-12 p-3 transition-all duration-300 group-hover/item:border-teal-10 group-hover/item:text-teal-10">
+            <Icon name={icon} class="size-full" />
           </div>
           <p class="text-center text-xl font-extrabold transition-all duration-300 group-hover/item:text-teal-10">
             {title}
           </p>
           <p class="text-center text-sm text-gray-11">{description}</p>
           {premium && (
-            <p class="absolute bottom-0 left-0 right-0 bg-teal-9 text-center text-sm font-bold uppercase transition-all duration-300 group-hover/item:bg-teal-10">
+            <p class="absolute inset-x-0 bottom-0 bg-teal-9 text-center text-sm font-bold uppercase transition-all duration-300 group-hover/item:bg-teal-10">
               Premium
             </p>
           )}
