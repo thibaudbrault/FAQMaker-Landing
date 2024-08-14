@@ -12,7 +12,8 @@
     "lint:fix": "eslint **/*.astro . --fix",
     "format": "prettier --write **/*.astro .",
     "astro": "astro",
-    "clean": "rimraf dist .astro node_modules"
+    "clean": "rimraf dist .astro node_modules",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",
@@ -26,6 +27,8 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^1.2.3",
     "eslint-plugin-tailwindcss": "^3.17.4",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.5.14",
@@ -51,5 +54,11 @@
     "overrides": {
       "@iconify/tools": "^4.0.5"
     }
+  },
+  "lint-staged": {
+    "./src/**/*.astro": [
+      "pnpm format",
+      "pnpm lint:fix"
+    ]
   }
 }
