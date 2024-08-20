@@ -30,8 +30,8 @@ importers:
         specifier: ^1.1.18
         version: 1.1.18
       '@iconify-json/mdi':
-        specifier: ^1.1.67
-        version: 1.1.67
+        specifier: ^1.1.68
+        version: 1.1.68
       '@iconify-json/uiw':
         specifier: ^1.1.12
         version: 1.1.12
@@ -432,8 +432,8 @@ packages:
   '@iconify-json/ion@1.1.18':
     resolution: {integrity: sha512-iS4PRBySPnTqz4IyNGc62KtNs4mG9oh/mXyVXcMDluxGOz7W4MSnKeazz23x7aQLHAx/JhbFStl9YMSt2z3AQg==}
 
-  '@iconify-json/mdi@1.1.67':
-    resolution: {integrity: sha512-00nllHES8hyACwIfgySlQgAE6MKgpr2wsKfpifMiZWZ9aXC5l4Jb0lR3lJSWwXgOW6kzAOdzC3T+2VOfBBZ13A==}
+  '@iconify-json/mdi@1.1.68':
+    resolution: {integrity: sha512-7//TKCiXLU6kNWeOJRTBbisofVO7rF1sD1TZTL4/V9nqlmVNczQ5IOY0GgKOTsitkcTnX9GXgrgbjw3OI5B69w==}
 
   '@iconify-json/uiw@1.1.12':
     resolution: {integrity: sha512-0GFwzIBXDsVjVwphPtXBKjqZX1oBsElkVLHv4RDB8giQPfNJSj2noenvnWHn0OOMcSLLIf+vmQlM6euyMiAvMA==}
@@ -3239,7 +3239,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/mdi@1.1.67':
+  '@iconify-json/mdi@1.1.68':
     dependencies:
       '@iconify/types': 2.0.0
 
