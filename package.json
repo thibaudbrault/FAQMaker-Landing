@@ -39,7 +39,7 @@
   "dependencies": {
     "@astrojs/ts-plugin": "^1.9.2",
     "@fontsource-variable/inter": "^5.0.19",
-    "@iconify-json/ci": "^1.1.13",
+    "@iconify-json/ci": "^1.2.0",
     "@iconify-json/cil": "^1.1.10",
     "@iconify-json/ic": "^1.1.18",
     "@iconify-json/ion": "^1.1.18",
