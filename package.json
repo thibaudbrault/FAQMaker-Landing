@@ -37,7 +37,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@astrojs/ts-plugin": "^1.9.2",
+    "@astrojs/ts-plugin": "^1.10.4",
     "@fontsource-variable/inter": "^5.0.19",
     "@iconify-json/ci": "^1.1.13",
     "@iconify-json/cil": "^1.1.10",
